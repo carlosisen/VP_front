@@ -9,7 +9,9 @@ const HeaderNav = () => {
     setIsMenuActive((prev) => !prev);
   };
   return (
-    <nav className={`header__nav ${isMenuActive && "isActive"}`}>
+    <nav
+      className={`header__nav ${isMenuActive && "isActive"}`}
+      onClick={() => isMenuActive && setIsMenuActive(false)}>
       <div
         onClick={() => setIsMenuActive(false)}
         className={`header__navButton ${isMenuActive && "isActive"}`}>
