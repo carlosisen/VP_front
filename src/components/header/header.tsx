@@ -1,6 +1,6 @@
 import "@styles/header.css";
-import texts from "../constants/texts.json";
-import logoVP from "../assets/images/logoVP.png";
+import texts from "../../constants/texts.json";
+import logoVP from "../../assets/images/logoVP.png";
 import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
         </nav>
       </div>
       <hgroup className="header__hgroup">
-        <h1>{languageText.header.main}</h1>
+        <h1 className="header__title"> {languageText.header.main}</h1>
       </hgroup>
     </header>
   );
