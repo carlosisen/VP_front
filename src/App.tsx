@@ -1,6 +1,5 @@
-import "@styles/global.css";
 import "@styles/app.css";
-import Header from "@components/header";
+import Header from "@components/header/header";
 import Main from "./pages/main";
 function App() {
   return (
