@@ -5,20 +5,11 @@
   --responsive-breakpoint: 750px;
   --laptop-breakpoint: 1080px;
   --pc-breakpoint: 1400px;
-  --Turquoise-Green: #90c3a6;
-  --Aero: #79b6e2;
-  --Dark-Blue-Gray: #5c589c;
-  --French-Lilac: #7d63a0;
-  --White: #fafafa;
-  --Dark-Navy-Blue: #1e094c;
-  --background: #fffffff;
-  --primaryColor: #4a3b70;
-  --primaryColor2: #4a3b70;
-  --secondayColot: #6fc98b;
-  --titles: #1e094c;
-  --text: #05020d;
+  --primaryColor: #6e41b9;
+  --primaryColor2: #bce1ea;
+  --text: #000;
+  --font: "yahone Kaffeesatz";
 }
-
 html,
 body {
   max-width: 100vw;
@@ -28,7 +19,14 @@ body {
   margin: 0;
   background-color: #bce1ea;
 }
-
+@font-face {
+  font-family: "yahone Kaffeesatz";
+  src: url("../../public/fonts/Yanone\ Kaffeesatz.woff2") format("woff2"),
+    url("../../public/fonts/Yanone\ Kaffeesatz.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: fallback;
+}
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -45,7 +43,7 @@ body {
   border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
-  font-family: var(--rubik), sans-serif;
+  font-family: var(--font), sans-serif;
 }
 
 /* Evitamos problemas con las imagenes */
@@ -118,8 +116,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--oxford);
-  color: var(--titles);
+  font-family: var(--font);
 }
 ul {
   padding: 0.5rem;
