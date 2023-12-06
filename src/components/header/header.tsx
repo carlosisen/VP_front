@@ -5,6 +5,7 @@ import HeaderNav from "./nav";
 
 const Header = () => {
   const languageText = texts[0].spanish;
+
   return (
     <header className="header">
       <div className="header__div--top">

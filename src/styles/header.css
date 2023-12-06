@@ -24,13 +24,15 @@
 
 .header__nav {
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
   z-index: 4;
+  width: 100vw;
+  height: 100vh;
 }
 .header__hgroup {
   width: 100%;
@@ -95,7 +97,7 @@
   justify-content: center;
   align-items: center;
   font-size: clamp(1rem, 8vw, 2rem);
-  margin: 2.5rem 5vw 1rem 0;
+  margin: 3rem 4vw 1rem 0;
 }
 @media (min-width: 720px) {
   .header__div--top {
@@ -109,6 +111,8 @@
     justify-content: center;
     align-items: center;
     gap: 1.56rem;
+    width: auto;
+    height: auto;
     /* min-width: 60%; */
   }
   .header__navIcon {
