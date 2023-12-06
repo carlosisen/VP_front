@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import texts from "@src/constants/texts.json";
 import Header from "./header";
 const headerTexts = texts[0].spanish.header;
