@@ -1,4 +1,4 @@
 const Main = () => {
-  return <div>ey soy main </div>;
+  return <div>PáGINA EN DESARROLLO, ESPERAD CON UNAS BUENAS PALOMITAS </div>;
 };
 export default Main;

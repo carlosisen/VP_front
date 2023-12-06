@@ -7,7 +7,6 @@ function App() {
     <div className="app__body">
       <Header />
       <Main />
-      <p>MUCHISIMO ROCK</p>
     </div>
   );
 }
