@@ -1,6 +1,7 @@
 import "@styles/header.css";
 import texts from "../constants/texts.json";
 import logoVP from "../assets/images/logoVP.png";
+import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
   const languageText = texts[0].spanish;
@@ -25,6 +26,9 @@ const Header = () => {
           </div>
           <div className="header__navButton">
             <h3 className="header__navText">{languageText.header.nav[4]}</h3>
+          </div>
+          <div className="header__navIcon">
+            <HiMenu />
           </div>
         </nav>
       </div>
