@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .main-div__section {
   display: flex;

@@ -4,6 +4,12 @@
       "header": {
         "main": "CÓMICS | VIDEOJUEGOS | SERIES | CINE",
         "nav": ["HOME", "PODCAST", "RESEÑAS", "PORTFOLIO", "QUIENES SOMOS"]
+      },
+      "mainPage": {
+        "news": {
+          "title": "NOTICIAS",
+          "subtitle": "Ver noticias anteriores"
+        }
       }
     }
   }

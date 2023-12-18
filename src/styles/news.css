@@ -3,5 +3,44 @@
   min-height: 28rem;
   border-radius: 0rem 1.25rem 1.25rem 0rem;
   background: #fff;
-  margin-left: 0;
+}
+
+.news__div {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 2rem 2.5rem 20%;
+}
+
+.swiper {
+  /* min-width: 70%; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news__image--new {
+  width: 12rem;
+  height: 12rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.news__anchor {
+  width: 12rem;
+  margin: 1rem;
+}
+.news__h3 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  hyphens: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.4em; /* ajusta esto según tu diseño */
+  height: 3em;
+  width: 100%;
 }
