@@ -1,0 +1,7 @@
+.news {
+  width: min(90vw, 55rem);
+  min-height: 28rem;
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+  background: #fff;
+  margin-left: 0;
+}
