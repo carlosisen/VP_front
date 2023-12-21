@@ -1,8 +1,9 @@
 import Titles from "./general/titles";
 import texts from "@src/constants/texts.json";
 import ContainerSection from "./general/containerSection";
+import reviews from "@src/constants/reviews.json";
 // import monchi from "@assets/images/monchito 1.png";
-import "@styles/videoSection.css";
+import "@styles/videoReviewSection.css";
 const VideoReviewSection = () => {
   const videoTexts = texts[0].spanish.mainPage.video;
   const reviewTexts = texts[0].spanish.mainPage.reviews;
@@ -25,6 +26,29 @@ const VideoReviewSection = () => {
       </ContainerSection>
       <ContainerSection>
         <Titles title={reviewTexts.title} subtitle={reviewTexts.subtitle} />
+        <div className="video-ReviewSection__div--rewiev">
+          {reviews.slice(0, 2).map((review) => (
+            <article className="videoReviewSection__article">
+              <img
+                className="videoReviewSection__image--new"
+                src={review.image}></img>
+              <h3 className="videoReviewSection__h3">{review.title}</h3>
+              <p>
+                {new Date().toLocaleDateString().slice(0, 10) +
+                  " | " +
+                  review.author}
+              </p>
+              <p className="videoReviewSection__p--content">{review.content}</p>
+              <a
+                className="videoReviewSection__anchor"
+                href={review.src}
+                target={"_blank"}
+                rel={"noopener noreferrer"}>
+                <span>Leer más</span>
+              </a>
+            </article>
+          ))}
+        </div>
       </ContainerSection>
     </section>
   );

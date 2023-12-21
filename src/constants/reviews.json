@@ -1,33 +1,26 @@
 [
   {
-    "image": "https://www.lacasadeel.net/wp-content/uploads/2023/11/Conan-9-1-scaled.webp",
+    "image": "https://www.mundodeportivo.com/alfabeta/hero/2023/11/daredevil-es-un-heroe-marvel.jpg?width=1200&aspect_ratio=16:9",
+    "src": "https://google.com",
     "title": "Nueva etapa de Daredevil 2 de enero 2024",
     "date": "",
     "author": "Gustavo Juárez",
-    "content": ""
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
-    "image": "https://www.lacasadeel.net/wp-content/uploads/2023/12/Batman-La-caida-del-Caballero-Oscuro-1.jpg.webp",
-    "title": "RESEÑA DE BATMAN: LA CAÍDA DEL CABALLERO OSCURO – LA SAGA COMPLETA 1 DE 2",
+    "image": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2015/06/487278-buenas-noches-punpun-licenciado-espana.jpg?tf=1200x",
+    "src": "https://google.com",
+    "title": "Buenas noches Pum Pum",
     "date": "",
-    "author": "Jairo Álvarez"
+    "author": "Isen soja",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "image": "https://www.lacasadeel.net/wp-content/uploads/2023/12/AQUAMAN-Y-EL-REINO-PERDIDO-6-scaled.webp",
+    "src": "https://google.com",
     "title": "AQUAMAN Y EL REINO PERDIDO: BUEN Y DIGNO ENTRETENIMIENTO",
     "date": "",
-    "author": "Fernando Cantillo"
-  },
-  {
-    "image": "https://www.lacasadeel.net/wp-content/uploads/2023/02/B1B6CBA9-800E-4C80-A50D-B4C02F195492-1392x783.jpeg",
-    "title": "ANÁLISIS DE HOGWARTS LEGACY",
-    "date": "",
-    "author": "Mario Cabezas"
-  },
-  {
-    "image": "https://www.lacasadeel.net/wp-content/uploads/2023/11/Conan-9-1-scaled.webp",
-    "title": "Reseña de Marvel Omnibus. Conan el Bárbaro: La Etapa Marvel Original 9",
-    "date": "",
-    "author": "Jairo Álvarez"
+    "author": "Fernando Cantillo",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
 ]
