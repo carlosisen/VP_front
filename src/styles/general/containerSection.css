@@ -1,7 +1,8 @@
 .containerSection {
   display: flex;
   flex-direction: column;
-  margin: 2.5rem 0rem 2.5rem 20%;
-  padding: 1rem 0rem 1rem 1rem;
+  margin: 0rem 0rem 2.5rem 20%;
+  padding: 0rem 0rem 1rem 1rem;
   gap: 1.56rem;
+  /* width: 90%; */
 }

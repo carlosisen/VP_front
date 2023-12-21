@@ -4,13 +4,30 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  gap: 2rem;
   padding: 3rem 0rem;
 }
-.main-div__section {
+.main__div__section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
   gap: 2.19rem;
   width: 100%;
+}
+.main__div--advertisement {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__img {
+  width: min(90vw, 18rem);
+}
+
+@media (max-width: 720px) {
+  .main__div--advertisement {
+    flex-basis: 100%;
+    margin-left: 10%;
+  }
 }
