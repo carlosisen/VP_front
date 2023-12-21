@@ -1,0 +1,16 @@
+.video-ReviewSection {
+  width: min(90vw, 55rem);
+  min-height: 28rem;
+}
+
+.video-ReviewSection__div--video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+@media (min-width: 700px) {
+  .video-ReviewSection__div--video {
+    aspect-ratio: 16/9;
+  }
+}

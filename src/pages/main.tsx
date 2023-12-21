@@ -1,5 +1,6 @@
-import News from "@src/components/news";
 import "@styles/main.css";
+import News from "@src/components/news";
+import VideoReviewSection from "@src/components/videoReviewSection";
 const Main = () => {
   return (
     <div className="main">
@@ -7,7 +8,9 @@ const Main = () => {
         <News />
         PÁGINA EN DESARROLLO, ESPERAD CON UNAS BUENAS PALOMITAS
       </div>
-      <div className="main-div__section"></div>
+      <div className="main-div__section">
+        <VideoReviewSection />
+      </div>
     </div>
   );
 };
