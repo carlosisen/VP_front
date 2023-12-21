@@ -9,12 +9,15 @@
   display: flex;
   flex-direction: column;
   margin: 2.5rem 2rem 2.5rem 20%;
+  padding: 1rem;
 }
-
+.news__div--container {
+  max-width: 46rem;
+}
 .swiper {
   /* min-width: 70%; */
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .swiper-slide {
@@ -35,7 +38,6 @@
 .news__h3 {
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   hyphens: none;
   overflow: hidden;
   text-overflow: ellipsis;

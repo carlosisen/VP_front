@@ -9,6 +9,14 @@
         "news": {
           "title": "NOTICIAS",
           "subtitle": "Ver noticias anteriores"
+        },
+        "video": {
+          "title": "ÚLTIMO VÍDEO",
+          "subtitle": "Ver vídeos anteriores"
+        },
+        "reviews": {
+          "title": "ÚLTIMAS RESEÑAS",
+          "subtitle": "Ver reseñas anteriores"
         }
       }
     }

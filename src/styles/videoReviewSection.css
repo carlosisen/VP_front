@@ -1,0 +1,71 @@
+.video-ReviewSection {
+  width: min(90vw, 55rem);
+  flex-basis: 68%;
+  min-height: 28rem;
+}
+
+.video-ReviewSection__div--video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 2px solid var(--primaryColor);
+}
+.video-ReviewSection__div--rewiev {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  border-top: 2px solid var(--primaryColor);
+  padding: 1.5rem 1rem;
+  aspect-ratio: 16/9;
+}
+.videoReviewSection__article {
+  height: 100%;
+  width: clamp(10rem, 40%, 16rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.videoReviewSection__image--new {
+  width: 100%;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.videoReviewSection__h3 {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.videoReviewSection__p--content {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  hyphens: auto;
+
+  /* Establece estos para el efecto de truncado */
+  overflow: hidden; /* Oculta el texto que desborda */
+  text-overflow: ellipsis; /* Añade los puntos suspensivos */
+
+  line-height: 1.4em;
+  height: 5.95rem; /* Asegúrate de que este permite solo una línea de texto */
+  width: 100%;
+}
+
+@media (max-width: 570px) {
+  .video-ReviewSection__div--rewiev article:last-child {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .video-ReviewSection {
+    width: min(90vw, 55rem);
+    flex-basis: 90%;
+    min-height: 28rem;
+  }
+}
