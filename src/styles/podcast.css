@@ -1,0 +1,18 @@
+.podcast {
+  height: 100%;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+  padding: 1.25rem;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+}
+@media (max-width: 920px) {
+  .podcast {
+    flex-basis: 80%;
+    width: min(80vw, 55rem);
+    margin-left: 10%;
+  }
+}

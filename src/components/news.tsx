@@ -18,12 +18,14 @@ const News = () => {
         <div className="news__div--container">
           <Swiper
             pagination={{
+              clickable: true,
               dynamicBullets: true,
             }}
             modules={[Pagination]}
             effect={"cards"}
             grabCursor={true}
             slidesPerView={1}
+            navigation
             initialSlide={0}
             breakpoints={{
               520: {
@@ -32,27 +34,32 @@ const News = () => {
               840: {
                 slidesPerView: 3,
               },
+              1300: {
+                slidesPerView: 4,
+              },
             }}
             className="mySwiper">
             {news.map((singleNew, index) => {
               return (
-                <SwiperSlide key={`${index}-swip`}>
-                  <a
-                    className="news__anchor"
-                    href="https://google.com"
-                    target={"_blank"}
-                    rel={"noopener noreferrer"}>
-                    <img
-                      className="news__image--new"
-                      src={singleNew.image}></img>
-                    <h3 className="news__h3">{singleNew.title}</h3>
-                    <p>
-                      {new Date().toLocaleDateString().slice(0, 10) +
-                        "|" +
-                        singleNew.author}
-                    </p>
-                  </a>
-                </SwiperSlide>
+                <div className="e">
+                  <SwiperSlide key={`${index}-swip`}>
+                    <a
+                      className="news__anchor"
+                      href="https://google.com"
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}>
+                      <img
+                        className="news__image--new"
+                        src={singleNew.image}></img>
+                      <h3 className="news__h3">{singleNew.title}</h3>
+                      <p>
+                        {new Date().toLocaleDateString().slice(0, 10) +
+                          "|" +
+                          singleNew.author}
+                      </p>
+                    </a>
+                  </SwiperSlide>
+                </div>
               );
             })}
           </Swiper>
