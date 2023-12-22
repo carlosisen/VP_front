@@ -11,7 +11,11 @@ const VideoReviewSection = () => {
   return (
     <section className="video-ReviewSection">
       <ContainerSection>
-        <Titles title={videoTexts.title} subtitle={videoTexts.subtitle} />
+        <Titles
+          title={videoTexts.title}
+          subtitle={videoTexts.subtitle}
+          color="dark"
+        />
         <div className="video-ReviewSection__div--video">
           <iframe
             width={"100%"}
@@ -25,7 +29,11 @@ const VideoReviewSection = () => {
         </div>
       </ContainerSection>
       <ContainerSection>
-        <Titles title={reviewTexts.title} subtitle={reviewTexts.subtitle} />
+        <Titles
+          title={reviewTexts.title}
+          subtitle={reviewTexts.subtitle}
+          color="dark"
+        />
         <div className="video-ReviewSection__div--rewiev">
           {reviews.slice(0, 2).map((review) => (
             <article className="videoReviewSection__article">

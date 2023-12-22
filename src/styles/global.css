@@ -50,8 +50,8 @@ body {
 img,
 picture,
 video,
-iframe,
-svg,
+/* iframe,
+svg, */
 figure {
   max-width: 100%;
   display: block;

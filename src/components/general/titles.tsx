@@ -26,7 +26,7 @@ const Titles = ({
         )}
         {title}
       </h3>
-      <h4 className={`title__h4 ${color} ${size}`}>
+      <h4 className={`title__h4 ${size}`}>
         {subtitle}
         <FaPlay className="title__icon" />
       </h4>
