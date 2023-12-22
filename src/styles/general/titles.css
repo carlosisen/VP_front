@@ -1,5 +1,5 @@
 .title {
-  max-width: 45.625rem;
+  /* max-width: 45.625rem; */
   width: 100%;
   /* min-height: 4rem; */
   display: flex;
@@ -12,6 +12,9 @@
   font-style: normal;
   font-weight: 600;
   /* padding: 1rem 1rem 1rem 1rem; */
+}
+.title__icon--svg {
+  display: inline;
 }
 .title__icon {
   font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
@@ -28,9 +31,18 @@
   font-weight: 400;
   line-height: normal;
 }
-.title_h3.light {
+.title__h3.dark {
+  color: white;
   /* padding: 1rem 1rem 1rem 0rem; */
 }
 .title__h4.little {
   display: none;
+}
+.title__h3.little {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
 }

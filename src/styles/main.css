@@ -22,12 +22,15 @@
   align-items: center;
 }
 .main__img {
-  width: min(90vw, 18rem);
+  width: 100%;
 }
 
 @media (max-width: 720px) {
   .main__div--advertisement {
     flex-basis: 100%;
     margin-left: 10%;
+  }
+  .main__img {
+    width: min(90vw, 18rem);
   }
 }
