@@ -39,7 +39,6 @@
   background-color: var(--primaryColor);
   border-radius: 1.25rem 1.25rem 0rem 0rem;
   padding: 1rem 3rem;
-  /* padding: 1rem 1rem 1rem 0rem; */
 }
 .title__h4.little {
   display: none;
