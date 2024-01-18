@@ -11,8 +11,8 @@ type propsTitle = {
 
 const Titles = ({
   color = "light",
-  title = "EXAMPLE",
-  subtitle = "example",
+  title = "",
+  subtitle = "",
   size = "big",
   icon,
 }: propsTitle) => {

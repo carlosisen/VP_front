@@ -31,6 +31,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: right;
   /* min-width: fit-content; */
   /* width: min-content; */
 }
@@ -38,8 +39,17 @@
   color: white;
   background-color: var(--primaryColor);
   border-radius: 1.25rem 1.25rem 0rem 0rem;
-  padding: 1rem 3rem;
+  /* padding: 1rem 3rem; */
+  width: 300px;
+  min-width: 20%;
+  max-width: 50%;
+  padding: 1rem 0rem;
+  text-align: center;
 }
+.title__h3.dark.little {
+  max-width: 100%;
+}
+
 .title__h4.little {
   display: none;
 }
