@@ -19,6 +19,13 @@
           "subtitle": "Ver reseñas anteriores"
         },
         "podcast": { "title": "ÚLTIMOS PODCAST" }
+      },
+      "footer": {
+        "index": "ÍNDICE",
+        "nav": ["PODCAST", "RESEÑAS", "PORTFOLIO", "QUIENES SOMOS"],
+        "title": "Villa Pingüino Podcast",
+        "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "foot": "2023 Villa Pingüino Podcast ©"
       }
     }
   }

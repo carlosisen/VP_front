@@ -1,0 +1,112 @@
+.footer {
+  background-color: var(--primaryColor);
+  min-height: 20vh;
+  min-height: 20dvh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__div--main {
+  position: relative;
+  width: 87%;
+  /* margin-bottom: 8vh; */
+  padding: 20px 15px 50px 15px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20%;
+}
+.footer__div--foot {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #53269f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__div--foot > p {
+  color: white;
+}
+.footer__div--img {
+  position: absolute;
+  top: -35px;
+  right: -20px;
+  aspect-ratio: 12.0625/13.125;
+  width: clamp(4rem, 14.12%, 20rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img {
+  position: relative;
+  z-index: 1;
+}
+.footer__svg {
+  width: 100%;
+  position: relative;
+  bottom: 11px;
+  z-index: 0;
+}
+.footer__nav--title {
+  color: #bce1ea;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav--link {
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: 2.375rem;
+}
+.footer__div--content {
+  max-width: max(315px, 20%);
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.footer__h4 {
+  color: #bce1ea;
+  /* font-family: Yanone Kaffeesatz; */
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer__p--content {
+  color: #fff;
+  /* font-family: Yanone Kaffeesatz; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer__div--rrss {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icon {
+  color: white;
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  .footer__div--main {
+    width: 95%;
+  }
+  .footer__nav {
+    display: none;
+  }
+}
