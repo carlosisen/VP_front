@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "yahone Kaffeesatz";
+  src: url("../../public/fonts/Yanone-Kaffeesatz.woff2") format("woff2"),
+    url("../../public/fonts/Yanone-Kaffeesatz.woff") format("woff");
+  font-weight: 100 300 600 900;
+  font-style: normal;
+  font-display: fallback;
+}
 /* variables */
 :root {
   --timerHover: 0.3s;
@@ -18,14 +26,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   background-color: #bce1ea;
-}
-@font-face {
-  font-family: "yahone Kaffeesatz";
-  src: url("../../public/fonts/Yanone\ Kaffeesatz.woff2") format("woff2"),
-    url("../../public/fonts/Yanone\ Kaffeesatz.woff") format("woff");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: fallback;
 }
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
@@ -50,8 +50,8 @@ body {
 img,
 picture,
 video,
-iframe,
-svg,
+/* iframe,
+svg, */
 figure {
   max-width: 100%;
   display: block;
@@ -198,7 +198,10 @@ h1 {
   /* text-wrap: nowrap; */
 }
 h3 {
-  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw + 0.5rem, 1.5rem);
+}
+h4 {
+  font-size: clamp(1rem, 1.25vw + 0.5rem, 1.25rem);
 }
 
 input {
