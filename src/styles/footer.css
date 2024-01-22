@@ -34,7 +34,7 @@
   top: -35px;
   right: -20px;
   aspect-ratio: 12.0625/13.125;
-  width: clamp(4rem, 14.12%, 20rem);
+  width: clamp(5rem, 14.12%, 20rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
