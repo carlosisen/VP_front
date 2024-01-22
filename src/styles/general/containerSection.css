@@ -6,3 +6,8 @@
   gap: 1.56rem;
   /* width: 90%; */
 }
+@media (max-width: 1000px) {
+  .containerSection {
+    margin: 0rem 0 2.5rem 10%;
+  }
+}
