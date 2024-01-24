@@ -1,5 +1,6 @@
 .app__body {
   width: 100%;
+  /* max-width: 1650px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

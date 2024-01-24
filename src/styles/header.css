@@ -14,7 +14,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 20vh;
+  max-width: 1650px;
 }
 .header__figure {
   /* min-width: 5%; */
