@@ -41,7 +41,7 @@ const VideoReviewSection = () => {
                 className="videoReviewSection__image--new"
                 src={review.image}></img>
               <h3 className="videoReviewSection__h3">{review.title}</h3>
-              <p>
+              <p className="videoReviewSection__p">
                 {new Date().toLocaleDateString().slice(0, 10) +
                   " | " +
                   review.author}
@@ -52,7 +52,7 @@ const VideoReviewSection = () => {
                 href={review.src}
                 target={"_blank"}
                 rel={"noopener noreferrer"}>
-                <span>Leer más</span>
+                <span className="videoReviewSection__span">Leer más</span>
               </a>
             </article>
           ))}
