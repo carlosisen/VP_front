@@ -1,16 +1,16 @@
 .footer {
   background-color: var(--primaryColor);
-  min-height: 20vh;
-  min-height: 20dvh;
   width: 100%;
   position: relative;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
 .footer__div--main {
   position: relative;
   width: 87%;
+  max-width: 1650px;
   /* margin-bottom: 8vh; */
   padding: 20px 15px 50px 15px;
   display: flex;
