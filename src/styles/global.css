@@ -2,7 +2,7 @@
   font-family: "yahone Kaffeesatz";
   src: url("../../public/fonts/Yanone-Kaffeesatz.woff2") format("woff2"),
     url("../../public/fonts/Yanone-Kaffeesatz.woff") format("woff");
-  font-weight: 100 300 600 900;
+  font-weight: 100 300 400 600 900;
   font-style: normal;
   font-display: fallback;
 }
