@@ -1,7 +1,21 @@
 .video-ReviewSection {
-  width: min(90vw, 55rem);
-  flex-basis: 68%;
+  /* width: min(90vw, 55rem);
+  flex-basis: 67%;
   min-height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; */
+  width: min(90vw, 55rem);
+  flex: 0.75 0 67%;
+  min-height: 28rem;
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+  /* background: #fff; */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .video-ReviewSection__div--video {
@@ -23,7 +37,8 @@
 }
 .videoReviewSection__article {
   height: 100%;
-  width: clamp(10rem, 40%, 16rem);
+  /* flex-basis: 40%; */
+  width: clamp(10rem, 40%, 72rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -65,15 +80,26 @@
   width: 100%;
 }
 
-@media (max-width: 570px) {
-  .video-ReviewSection__div--rewiev article:last-child {
-    display: none;
+@media (max-width: 720px) {
+  .video-ReviewSection {
+    width: min(90vw, 55rem);
+    flex-basis: 75%;
+    min-height: 28rem;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 570px) {
   .video-ReviewSection {
     width: min(90vw, 55rem);
     flex-basis: 90%;
     min-height: 28rem;
+    align-items: center;
+  }
+  .video-ReviewSection__div--rewiev article:last-child {
+    display: none;
+  }
+}
+@media (min-width: 1900px) {
+  .video-ReviewSection {
+    flex: 0.4 0 50%;
   }
 }

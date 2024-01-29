@@ -32,6 +32,9 @@
   align-items: flex-end;
   z-index: 4;
   width: 100vw;
+  height: 0;
+}
+.header__nav.isActive {
   height: 100vh;
 }
 .header__hgroup {
@@ -115,6 +118,9 @@
     height: auto;
     /* min-width: 60%; */
   }
+  .header__nav.isActive {
+    height: auto;
+  }
   .header__navIcon {
     display: none;
   }
@@ -137,6 +143,10 @@
     transform: translateY(35%);
     transition: transform 0.4s ease-in;
     border: none;
+  }
+  .header__navButton.isActive {
+    transform: translateX(0%);
+    transform: translateY(25%);
   }
   .header__navButton:hover {
     transform: none;

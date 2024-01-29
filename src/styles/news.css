@@ -1,22 +1,28 @@
 .news {
   width: min(90vw, 55rem);
-  flex-basis: 68%;
+  flex: 0.75 0 67%;
   min-height: 28rem;
   border-radius: 0rem 1.25rem 1.25rem 0rem;
   background: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
 }
 
 .news__div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2.5rem 0rem 2.5rem 20%;
+  margin: 2.5rem 0rem 2.5rem 10%;
   padding: 1rem 2rem 1rem 1rem;
   overflow: hidden;
-  flex-basis: 68%;
+  /* flex-basis: 68%; */
+  max-width: 1550px;
+  width: 90%;
 }
 .news__div--container {
-  max-width: 46rem;
+  /* max-width: 46rem; */
   width: 100%;
 }
 .swiper {
@@ -53,4 +59,9 @@
   line-height: 1.4em; /* ajusta esto según tu diseño */
   height: 3em;
   width: 100%;
+}
+@media (min-width: 1900px) {
+  .news {
+    flex: 0.4 0 50%;
+  }
 }

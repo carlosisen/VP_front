@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 .footer__div--main {
   position: relative;
@@ -56,6 +57,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 16px;
 }
 .footer__nav {
   display: flex;
@@ -68,8 +70,8 @@
   color: #fff;
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: lighter;
-  line-height: 2.375rem;
+  font-weight: 100;
+  line-height: 2rem;
 }
 .footer__div--content {
   max-width: max(315px, 20%);

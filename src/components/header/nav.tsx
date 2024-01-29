@@ -37,8 +37,8 @@ const HeaderNav = () => {
         className={`header__navButton ${isMenuActive && "isActive"}`}>
         <h3 className="header__navText">{languageText.header.nav[4]}</h3>
       </div>
-      <div className="header__navIcon">
-        <HiMenu onClick={() => handleMenu()} />
+      <div className="header__navIcon" onClick={() => handleMenu()}>
+        <HiMenu />
       </div>
     </nav>
   );
