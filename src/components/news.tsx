@@ -32,10 +32,10 @@ const News = () => {
                 slidesPerView: 2,
               },
               840: {
-                slidesPerView: 3,
+                slidesPerView: 4,
               },
               1300: {
-                slidesPerView: 4,
+                slidesPerView: 5,
               },
             }}
             className="mySwiper">

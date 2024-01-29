@@ -8,11 +8,19 @@
   background-color: var(--primaryColor);
   padding: 1.25rem;
   border-radius: 1.25rem 1.25rem 0rem 0rem;
+  max-width: 500px;
 }
 @media (max-width: 1100px) {
   .podcast {
-    flex-basis: 80%;
+    flex-basis: 89%;
+    /* flex-basis: 83%; */
     width: min(80vw, 55rem);
-    margin-left: 10%;
+    margin-left: 5%;
+    max-width: none;
   }
 }
+/* @media (max-width: 480px) {
+  .podcast {
+    flex-basis: 89%;
+  }
+} */
