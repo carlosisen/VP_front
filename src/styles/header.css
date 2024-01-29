@@ -21,7 +21,6 @@
   width: clamp(10%, 350px, min(17rem, 75%));
   /* max-width: 16.375rem; */
 }
-
 .header__nav {
   position: absolute;
   top: 0;
@@ -34,7 +33,24 @@
   width: 100vw;
   height: 0;
 }
-.header__nav.isActive {
+.header__nav--container {
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  padding: 1rem;
+  background-color: transparent;
+}
+.header__nav--container.isActive {
+  transition: background-color 1s ease;
+  background-color: var(--primaryColor);
+  width: 100%;
   height: 100vh;
 }
 .header__hgroup {
@@ -51,6 +67,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 1px 3px 5px black;
+  text-wrap: pretty;
 }
 .header__navButton {
   display: flex;
@@ -116,9 +133,23 @@
     gap: 1.56rem;
     width: auto;
     height: auto;
+  }
+  .header__nav--container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.56rem;
+    width: auto;
+    height: auto;
+    background-color: transparent;
     /* min-width: 60%; */
   }
-  .header__nav.isActive {
+  .header__nav--container.isActive {
+    transition: background-color 0s ease;
+    background-color: transparent;
     height: auto;
   }
   .header__navIcon {

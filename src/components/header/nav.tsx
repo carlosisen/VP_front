@@ -12,30 +12,32 @@ const HeaderNav = () => {
     <nav
       className={`header__nav ${isMenuActive && "isActive"}`}
       onClick={() => isMenuActive && setIsMenuActive(false)}>
-      <div
-        onClick={() => setIsMenuActive(false)}
-        className={`header__navButton ${isMenuActive && "isActive"}`}>
-        <h3 className="header__navText">{languageText.header.nav[0]}</h3>
-      </div>
-      <div
-        onClick={() => setIsMenuActive(false)}
-        className={`header__navButton ${isMenuActive && "isActive"}`}>
-        <h3 className="header__navText">{languageText.header.nav[1]}</h3>
-      </div>
-      <div
-        onClick={() => setIsMenuActive(false)}
-        className={`header__navButton ${isMenuActive && "isActive"}`}>
-        <h3 className="header__navText">{languageText.header.nav[2]}</h3>
-      </div>
-      <div
-        onClick={() => setIsMenuActive(false)}
-        className={`header__navButton ${isMenuActive && "isActive"}`}>
-        <h3 className="header__navText">{languageText.header.nav[3]}</h3>
-      </div>
-      <div
-        onClick={() => setIsMenuActive(false)}
-        className={`header__navButton ${isMenuActive && "isActive"}`}>
-        <h3 className="header__navText">{languageText.header.nav[4]}</h3>
+      <div className={`header__nav--container ${isMenuActive && "isActive"}`}>
+        <div
+          onClick={() => setIsMenuActive(false)}
+          className={`header__navButton ${isMenuActive && "isActive"}`}>
+          <h3 className="header__navText">{languageText.header.nav[0]}</h3>
+        </div>
+        <div
+          onClick={() => setIsMenuActive(false)}
+          className={`header__navButton ${isMenuActive && "isActive"}`}>
+          <h3 className="header__navText">{languageText.header.nav[1]}</h3>
+        </div>
+        <div
+          onClick={() => setIsMenuActive(false)}
+          className={`header__navButton ${isMenuActive && "isActive"}`}>
+          <h3 className="header__navText">{languageText.header.nav[2]}</h3>
+        </div>
+        <div
+          onClick={() => setIsMenuActive(false)}
+          className={`header__navButton ${isMenuActive && "isActive"}`}>
+          <h3 className="header__navText">{languageText.header.nav[3]}</h3>
+        </div>
+        <div
+          onClick={() => setIsMenuActive(false)}
+          className={`header__navButton ${isMenuActive && "isActive"}`}>
+          <h3 className="header__navText">{languageText.header.nav[4]}</h3>
+        </div>
       </div>
       <div className="header__navIcon" onClick={() => handleMenu()}>
         <HiMenu />
