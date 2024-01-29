@@ -4,7 +4,7 @@
     url("/fonts/Yanone-Kaffeesatz.woff") format("woff");
   font-weight: 100 300 400 600 900;
   font-style: normal;
-  font-display: fallback;
+  font-display: block;
 }
 /* variables */
 :root {
