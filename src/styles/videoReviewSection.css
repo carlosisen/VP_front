@@ -90,7 +90,7 @@
 @media (max-width: 570px) {
   .video-ReviewSection {
     width: min(90vw, 55rem);
-    flex-basis: 90%;
+    flex-basis: 100%;
     min-height: 28rem;
     align-items: center;
   }
