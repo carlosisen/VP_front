@@ -18,7 +18,7 @@
   padding: 1rem 2rem 1rem 1rem;
   overflow: hidden;
   /* flex-basis: 68%; */
-  max-width: 1550px;
+  max-width: 1000px;
   width: 90%;
 }
 .news__div--container {
@@ -60,8 +60,24 @@
   height: 3em;
   width: 100%;
 }
-@media (min-width: 1900px) {
+@media (min-width: 2500px) {
+  .news {
+    flex: 0.4 0 38%;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2500px) {
+  .news {
+    flex: 0.4 0 45%;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2100px) {
   .news {
     flex: 0.4 0 50%;
+  }
+}
+@media (hover: hover) {
+  .news__anchor:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
   }
 }

@@ -34,7 +34,7 @@ const News = () => {
               840: {
                 slidesPerView: 4,
               },
-              1300: {
+              1600: {
                 slidesPerView: 5,
               },
             }}

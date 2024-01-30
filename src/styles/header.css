@@ -53,15 +53,27 @@
   width: 100%;
   height: 100vh;
 }
+.header__hgroup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primaryColor); /* Color del filtro */
+  opacity: 0.5;
+  z-index: -1;
+}
 .header__hgroup {
   width: 100%;
-  background-color: #6e41b9;
-  height: 25rem;
+  height: 24.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 3;
+  background: no-repeat center/cover
+    url("../assets/images/hero_banner_1920x700.jpg");
 }
 .header__title {
   text-align: center;
