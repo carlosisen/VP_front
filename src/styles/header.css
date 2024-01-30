@@ -99,7 +99,7 @@
   transform: translateX(0%);
   transition: transform 0.5s ease;
 }
-.header__navButton:hover {
+.header__navButton.isActive:hover {
   transform: translateX(-15%);
   background-color: #6e41b9;
   transition: transform 0.4s ease-in, background-color 0.5s ease-in-out;
@@ -108,7 +108,12 @@
   color: #fffefe;
   transition: color 0.5s ease;
 }
+.header__navButton:active h3 {
+  color: #fffefe;
+  transition: color 0.5s ease;
+}
 .header__navButton:active {
+  transform: translateX(-15%);
   background-color: #6e41b9;
   transition: background-color 0.5s ease;
 }
@@ -209,7 +214,9 @@
     color: #fffefe;
     transition: color 0.5s ease;
   }
-  .header__navButton:active {
+  .header__navButton0.isActive:active,
+  .header__navButton.isActive:hover {
+    transform: translateX(0) translateY(15%);
     background-color: #6e41b9;
     transition: background-color 0.5s ease;
   }
