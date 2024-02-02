@@ -29,10 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 15%;
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   border-top: 2px solid var(--primaryColor);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 8%;
   aspect-ratio: 16/9;
 }
 .videoReviewSection__article {
