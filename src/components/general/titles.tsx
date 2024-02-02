@@ -7,6 +7,7 @@ type propsTitle = {
   subtitle?: string;
   size?: "big" | "little";
   icon?: "mphone";
+  link?: string;
 };
 
 const Titles = ({
@@ -15,6 +16,7 @@ const Titles = ({
   subtitle = "",
   size = "big",
   icon,
+  link = "",
 }: propsTitle) => {
   const microphoneSvg = icon === "mphone" && microSvg;
   return (
@@ -26,11 +28,35 @@ const Titles = ({
         )}
         {title}
       </h3>
-      <h4 className={`title__h4 ${size}`}>
-        {subtitle}
-        <FaPlay className="title__icon" />
-      </h4>
+      <Subtitle subtitle={subtitle} size={size} link={link} />
     </div>
   );
 };
 export default Titles;
+
+const Subtitle = ({
+  link = "",
+  subtitle,
+  size,
+}: {
+  link: propsTitle["link"];
+  subtitle: propsTitle["subtitle"];
+  size: propsTitle["size"];
+}) => {
+  if (link.length) {
+    return (
+      <a href={link ? link : ""} target="_blank">
+        <h4 className={`title__h4 ${size}`}>
+          {subtitle}
+          <FaPlay className="title__icon" />
+        </h4>
+      </a>
+    );
+  }
+  return (
+    <h4 className={`title__h4 ${size}`}>
+      {subtitle}
+      <FaPlay className="title__icon" />
+    </h4>
+  );
+};
