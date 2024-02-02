@@ -2,6 +2,7 @@ import Titles from "./general/titles";
 import texts from "@src/constants/texts.json";
 import ContainerSection from "./general/containerSection";
 import reviews from "@src/constants/reviews.json";
+import { FaPlay } from "react-icons/fa";
 // import monchi from "@assets/images/monchito 1.png";
 import "@styles/videoReviewSection.css";
 const VideoReviewSection = () => {
@@ -15,6 +16,7 @@ const VideoReviewSection = () => {
           title={videoTexts.title}
           subtitle={videoTexts.subtitle}
           color="dark"
+          link="https://www.youtube.com/channel/UCXAVwj7gHmnolgx2r75AqGQ"
         />
         <div className="video-ReviewSection__div--video">
           <iframe
@@ -41,7 +43,7 @@ const VideoReviewSection = () => {
                 className="videoReviewSection__image--new"
                 src={review.image}></img>
               <h3 className="videoReviewSection__h3">{review.title}</h3>
-              <p>
+              <p className="videoReviewSection__p">
                 {new Date().toLocaleDateString().slice(0, 10) +
                   " | " +
                   review.author}
@@ -52,7 +54,10 @@ const VideoReviewSection = () => {
                 href={review.src}
                 target={"_blank"}
                 rel={"noopener noreferrer"}>
-                <span>Leer más</span>
+                <span className="videoReviewSection__span">
+                  {reviewTexts.foot}
+                  <FaPlay className="videoReviewSection__span--icon" />
+                </span>
               </a>
             </article>
           ))}

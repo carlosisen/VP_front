@@ -14,14 +14,13 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 20vh;
+  max-width: 1650px;
 }
 .header__figure {
   /* min-width: 5%; */
   width: clamp(10%, 350px, min(17rem, 75%));
   /* max-width: 16.375rem; */
 }
-
 .header__nav {
   position: absolute;
   top: 0;
@@ -32,42 +31,76 @@
   align-items: flex-end;
   z-index: 4;
   width: 100vw;
+  height: 0;
+}
+.header__nav.isActive {
   height: 100vh;
+}
+.header__nav--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 4;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0rem 0rem 0rem;
+  background-color: transparent;
+  transition: transform 0.5s ease, background-color 1s ease;
+  transform: translatex(100%);
+}
+.header__nav--container.isActive {
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: auto;
+  transform: translateX(25%);
+}
+.header__hgroup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primaryColor); /* Color del filtro */
+  opacity: 0.5;
+  z-index: -1;
 }
 .header__hgroup {
   width: 100%;
-  background-color: #6e41b9;
-  height: 25rem;
+  height: 24.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 3;
+  background: no-repeat center/cover
+    url("../assets/images/hero_banner_1920x700.jpg");
 }
 .header__title {
   text-align: center;
   color: #fff;
   text-shadow: 1px 3px 5px black;
+  text-wrap: pretty;
 }
 .header__navButton {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  padding: 1rem;
+  padding: 0.7rem;
   background: #fffefe;
   min-width: 60vw;
   width: 100%;
   border: 2px solid var(--primaryColor);
-  transform: translatex(100%);
   transition: transform 0.5s ease;
 }
 .header__navButton.isActive {
-  transform: translateX(15%);
+  transform: translateX(0%);
   transition: transform 0.5s ease;
 }
-.header__navButton:hover {
-  transform: translateX(0%);
+.header__navButton.isActive:hover {
+  transform: translateX(-15%);
   background-color: #6e41b9;
   transition: transform 0.4s ease-in, background-color 0.5s ease-in-out;
 }
@@ -75,7 +108,12 @@
   color: #fffefe;
   transition: color 0.5s ease;
 }
+.header__navButton:active h3 {
+  color: #fffefe;
+  transition: color 0.5s ease;
+}
 .header__navButton:active {
+  transform: translateX(-15%);
   background-color: #6e41b9;
   transition: background-color 0.5s ease;
 }
@@ -113,7 +151,31 @@
     gap: 1.56rem;
     width: auto;
     height: auto;
-    /* min-width: 60%; */
+  }
+  .header__nav.isActive {
+    height: auto;
+  }
+  .header__nav--container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.56rem;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: none;
+  }
+  .header__nav--container.isActive {
+    transform: none;
+  }
+
+  .header__nav--container.isActive {
+    transition: background-color 0s ease;
+    background-color: transparent;
+    height: auto;
   }
   .header__navIcon {
     display: none;
@@ -138,6 +200,10 @@
     transition: transform 0.4s ease-in;
     border: none;
   }
+  .header__navButton.isActive {
+    transform: translateX(0%);
+    transform: translateY(25%);
+  }
   .header__navButton:hover {
     transform: none;
     transform: translateY(25%);
@@ -148,7 +214,9 @@
     color: #fffefe;
     transition: color 0.5s ease;
   }
-  .header__navButton:active {
+  .header__navButton0.isActive:active,
+  .header__navButton.isActive:hover {
+    transform: translateX(0) translateY(15%);
     background-color: #6e41b9;
     transition: background-color 0.5s ease;
   }

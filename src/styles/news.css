@@ -1,22 +1,28 @@
 .news {
   width: min(90vw, 55rem);
-  flex-basis: 68%;
+  flex: 0.75 0 67%;
   min-height: 28rem;
   border-radius: 0rem 1.25rem 1.25rem 0rem;
   background: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
 }
 
 .news__div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2.5rem 0rem 2.5rem 20%;
+  margin: 2.5rem 0rem 2.5rem 10%;
   padding: 1rem 2rem 1rem 1rem;
   overflow: hidden;
-  flex-basis: 68%;
+  /* flex-basis: 68%; */
+  max-width: 1000px;
+  width: 90%;
 }
 .news__div--container {
-  max-width: 46rem;
+  /* max-width: 46rem; */
   width: 100%;
 }
 .swiper {
@@ -53,4 +59,25 @@
   line-height: 1.4em; /* ajusta esto según tu diseño */
   height: 3em;
   width: 100%;
+}
+@media (min-width: 2500px) {
+  .news {
+    flex: 0.4 0 38%;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2500px) {
+  .news {
+    flex: 0.4 0 45%;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2100px) {
+  .news {
+    flex: 0.4 0 50%;
+  }
+}
+@media (hover: hover) {
+  .news__anchor:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
 }
