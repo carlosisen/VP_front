@@ -22,7 +22,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
-  border: 2px solid var(--primaryColor);
+  border: 10px solid var(--primaryColor);
 }
 .video-ReviewSection__div--rewiev {
   background-color: white;
