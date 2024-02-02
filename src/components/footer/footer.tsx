@@ -23,9 +23,24 @@ const Footer = () => {
           <h4 className="footer__h4">{languageText.title}</h4>
           <p className="footer__p--content">{languageText.main}</p>
           <div className="footer__div--rrss">
-            <FaYoutube className="footer__icon" />
-            <FaTwitch className="footer__icon" />
-            <RiTwitterXLine className="footer__icon" />
+            <a
+              className="footer__icon"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCXAVwj7gHmnolgx2r75AqGQ">
+              <FaYoutube />
+            </a>
+            <a
+              className="footer__icon"
+              target="_blank"
+              href="https://www.twitch.tv/villapinguino">
+              <FaTwitch />
+            </a>
+            <a
+              className="footer__icon"
+              target="_blank"
+              href="https://twitter.com/PodcastPinguino">
+              <RiTwitterXLine />
+            </a>
           </div>
         </div>
         <div className="footer__div--img">

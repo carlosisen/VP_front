@@ -16,7 +16,8 @@
         },
         "reviews": {
           "title": "ÚLTIMAS RESEÑAS",
-          "subtitle": "Ver reseñas anteriores"
+          "subtitle": "Ver reseñas anteriores",
+          "foot": "Leer más"
         },
         "podcast": { "title": "ÚLTIMOS PODCAST" }
       },
