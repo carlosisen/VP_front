@@ -46,14 +46,15 @@
   height: auto;
   margin: 1rem 0rem 0rem 0rem;
   background-color: transparent;
-  transition: transform 0.5s ease, background-color 1s ease;
   transform: translatex(100%);
+  transition: transform 1.4s ease, background-color 1s ease;
 }
 .header__nav--container.isActive {
   background-color: var(--primaryColor);
   width: 100%;
   height: auto;
   transform: translateX(25%);
+  transition: transform 0.5s ease;
 }
 .header__hgroup::before {
   content: "";
@@ -210,9 +211,14 @@
     background-color: #6e41b9;
     transition: transform 0.4s ease-in, background-color 0.5s ease-in-out;
   }
-  .header__navButton:hover h3 {
+  .header__navButton:hover h3,
+  .header__navButton--Active h3 {
     color: #fffefe;
     transition: color 0.5s ease;
+  }
+  .header__navButton--Active {
+    transform: translateY(25%);
+    background-color: #6e41b9;
   }
   .header__navButton0.isActive:active,
   .header__navButton.isActive:hover {
